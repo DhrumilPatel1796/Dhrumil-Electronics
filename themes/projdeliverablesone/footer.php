@@ -15,7 +15,7 @@
 		<div class="site-info">
 			<?php
 			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Copyright: %1$s by %2$s.', 'projdeliverablesone' ), '2022', '<a href="https://pateldhrumil.com">Dhrumil Patel</a>' );
+			printf( esc_html__( 'Copyright: %1$s by %2$s.', 'projdeliverablesone' ), '2022', '<a href="'. home_url() .'">Project Deliverables One</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
