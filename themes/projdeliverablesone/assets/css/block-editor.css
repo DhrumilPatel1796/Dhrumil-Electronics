@@ -1,0 +1,247 @@
+.wp-block-quote {
+    color: blue;
+}
+
+.wp-block-quote.is-style-fancy-quote {
+    color: tomato;
+}
+
+.entry-content > * {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignwide {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td {
+    border: 2px solid #000;
+    font-size: 20px;
+}
+
+div.entry-content {
+    background-color: lightgray;
+}
+
+li {
+    list-style-position: inside;
+    font-size: 30px;
+    text-align: center;
+}
+
+.wp-block-quote.wp-block-quote.is-style-fancy-quote {
+    font-size: 25px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.wp-calender {
+    width: 100px;
+}
+
+caption {
+    font-size: 30px;
+}
+
+header, footer, aside {
+    background-color: #7c7c7c;
+}
+
+article, aside {
+    background-color: #cccccc;
+}
+
+img.custom-logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+li.page_item.page-item-98, li.page_item.page-item-16, li.page_item.page-item-100, li.page_item.page-item-96 {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-menu-button {
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    font-family: "Arial Narrow";
+    color: #000;
+    font-weight: 600;
+    margin-left: 3rem;
+}
+
+img.wp-image-61, img.wp-image-62, img.wp-image-66, img.wp-image-64 {
+    margin: 40px;
+}
+
+img.wp-image-64 {
+    margin: 50px;
+}
+
+p.products, p.services {
+    color: #7c7c7c;
+    font-weight: 400;
+    font-family: Franklin Gothic Demi;
+}
+
+p.services {
+    margin-bottom: 50px;
+}
+
+h2#our-services.services_title {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+strong {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.full_name, p.email, p.phone, p.notes {
+    width: 1000px;
+    height: 30px;
+    background-color: #b6b6b6;
+    text-align: center;
+    padding-top: 10px;
+}
+
+p.notes {
+    height: 60px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+div.wp-block-button.submit {
+    margin-left: 450px;
+    border-radius: 0px;
+    margin-bottom: 50px;
+}
+
+.site-footer {
+    padding-top: 50px;
+    height: 220px;
+}
+
+.site-footer .customer a, .corporate a {
+    color: white;
+    background: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+h1.entry-title {
+    display: none;
+}
+
+div.entry-content {
+    margin-top: -37px;
+}
+
+.entry-content p {
+    padding-top: 20px;
+}
+
+.site-title button, .site-login button {
+    float: right;
+    background-color: #00aeef;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Arial, Narrow";
+    font-weight: 600;
+    margin-right: 150px;
+    font-size: 18px;
+    margin-top: -150px;
+}
+
+.site-title button:hover, .site-login button:hover {
+    background-color: #e0e0e0;
+    color: red;
+    font-weight: 600;
+} 
+
+.site-login button {
+    margin-right: 50px;
+}
+
+.site-search {
+    margin-top: -50px;
+}
+
+.site-search input {
+    width: 70%;
+    text-align: center;
+    height: 40px;
+    margin-left: 250px;
+    background-color: #cccccc;
+    border: none;
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-footer .customer li, .site-footer .corporate li {
+    font-size: 15px;
+    color: #e0e0e0;
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 400px;
+}
+
+.customer a {
+    margin-left: 400px;
+    text-align: left;
+}
+
+.corporate a, .site-footer .corporate li {
+    margin-left: 400px;
+}
+
+.corporate p {
+    color: #fff;
+    text-align: center;
+    margin-right: 150px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+a.post-edit-link {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;;
+    background-color: #00aeef;
+}
+
+.nav_menu h3 {
+    font-size: 30px;
+    margin-left: 210px;
+}
+
+.nav_menu h3:hover, .nav_menu a:hover {
+    color: red;
+}
+
+h1, a{
+    background-color: #00aeef;
+    text-decoration: none;
+    color: #000;
+}
+
+a.custom-logo-link {
+    background: none;
+}
