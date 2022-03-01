@@ -12,11 +12,75 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<?php
-			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Copyright: %1$s by %2$s.', 'projdeliverablesone' ), '2022', '<a href="'. home_url() .'">Project Deliverables One</a>' );
-			?>
+		<div class="customer">
+			<a  href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Customer Care' ), 'WordPress' );
+				?>
+			</a>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Help Centre' ), 'WordPress' );
+				?>
+			</li>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Shipping Info' ), 'WordPress' );
+				?>
+			</li>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Return Policy' ), 'WordPress' );
+				?>
+			</li>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Contact Us' ), 'WordPress' );
+				?>
+			</li>
+		</div><!-- .Customer -->
+		<div class="corporate">
+			<a  href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Corporate' ), 'WordPress' );
+				?>
+			</a>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'About Us' ), 'WordPress' );
+				?>
+			</li>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Career' ), 'WordPress' );
+				?>
+			</li>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Terms & Conditions' ), 'WordPress' );
+				?>
+			</li>
+			<li href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Privacy' ), 'WordPress' );
+				?>
+			</li>
+			<p href="<?php echo esc_url( __( 'https://wordpress.org/', 'projdeliverablesone' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( '&copy; copyright 2022' ), 'WordPress' );
+				?>
+			</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
