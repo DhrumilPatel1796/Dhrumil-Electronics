@@ -17,6 +17,7 @@ upgrade
 
 # Wordpress plugin folders
 plugins/current-template-file
+plugins/test
 
 # SRC files/folders
 node_modules
