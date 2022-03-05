@@ -111,8 +111,30 @@ add_action( 'after_setup_theme', 'projdeliverablesone_content_width', 0 );
 function projdeliverablesone_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'projdeliverablesone' ),
-			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Footer Area 1', 'projdeliverablesone' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets here.', 'projdeliverablesone' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Area 2', 'projdeliverablesone' ),
+			'id'            => 'footer-2',
+			'description'   => esc_html__( 'Add widgets here.', 'projdeliverablesone' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Area 3', 'projdeliverablesone' ),
+			'id'            => 'footer-3',
 			'description'   => esc_html__( 'Add widgets here.', 'projdeliverablesone' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
@@ -128,6 +150,27 @@ add_action( 'widgets_init', 'projdeliverablesone_widgets_init' );
  */
 function projdeliverablesone_scripts() {
 	wp_enqueue_style( 'projdeliverablesone-style', get_stylesheet_uri(), array(), projdeliverablesone_VERSION );
+	wp_enqueue_style( 
+		'foundation-style', 
+		get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', 
+		'6.7.4' 
+	);
+
+	wp_enqueue_script( 
+		'what-input-script', 
+		get_template_directory_uri() . '/assets/js/vendor/what-input.js', 
+		array( 'jquery' ), 
+		'5.2.10', true 
+	);
+	
+	wp_enqueue_script( 
+		'foundation-script', 
+		get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', 
+		array( 'jquery', 'what-input-script' ), 
+		'6.7.4', 
+		true 
+	);
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -152,7 +195,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Customizer additions.
  */
-//require get_template_directory() . '/assets/css/block-editor.css';
+// require get_template_directory() . '/assets/css/block-editor.css';
 
 /**
  * Block Editor additions.
