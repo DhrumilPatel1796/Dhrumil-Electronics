@@ -45,7 +45,7 @@
 				?>
 				<p class="site-title">
 					<a href="
-						<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><button>My Account</button>
+						<?php echo esc_url( home_url( '/my-account' ) ); ?>" rel="home"><button>My Account</button>
 					</a>
 				</p>
 				<?php
@@ -89,40 +89,38 @@
 			endif;
 			?>
 			</div>
-			<div class="nav_menu">
-			<?php
-			if ( is_front_page() && is_home() ) :
-				?>
+			<div class="site-branding">
 				<?php
-			else :
+				if ( ! empty( get_custom_logo() ) ) {
+					// the_custom_logo();
+				} else {
+					if ( is_front_page() && is_home() ) :
+						?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
+					else :
+						?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php
+					endif;
+					$project__deliverables_1_description = get_bloginfo( 'description', 'display' );
+					if ( $project__deliverables_1_description || is_customize_preview() ) :
+						?>
+						<p class="site-description"><?php echo $project__deliverables_1_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+					<?php endif;
+				}
 				?>
-				<p class="menu">
-					<a href="
-						<?php echo esc_url( home_url( '/home' ) ); ?>" rel="home"><h3>Home</h3>
-					</a>
-					<a href="
-						<?php echo esc_url( home_url( '/about' ) ); ?>" rel="about"><h3>About</h3>
-					</a>
-					<a href="
-						<?php echo esc_url( home_url( '/block' ) ); ?>" rel="blog"><h3>Block Test</h3>
-					</a>
-					<a href="
-						<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact"><h3>Contact</h3>
-					</a>
-				</p>
-				<?php
-			endif;
-			?>
-		</div><!-- .site-branding -->
+			</div>
+			<!-- .site-branding -->
 
-		<!-- <nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'primary-menu',
+					'theme_location' => 'menu-primary',
 					'menu_id'        => 'primary-menu',
 				)
 			);
 			?>
-		</nav> #site-navigation -->
+		</nav> <!-- #site-navigation  -->
 	</header><!-- #masthead -->
