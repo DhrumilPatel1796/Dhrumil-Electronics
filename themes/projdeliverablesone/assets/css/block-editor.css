@@ -455,3 +455,49 @@ div.woocommerce.columns-4 ul.products.columns-4 h2, div.woocommerce.columns-4 bd
     margin-right: 4.0rem;
     font-size: 1.0rem;
 }
+
+/* Cart Page Styling */
+form.woocommerce-cart-form {
+    padding-top: 5.0rem;
+    margin-top: 2.0rem;
+}
+
+form.woocommerce-cart-form td, form.woocommerce-cart-form a {
+    background-color: #b6b6b6;
+    color: #fff;
+}
+
+form.woocommerce-cart-form th {
+    border: 0.1rem solid #000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+form.woocommerce-cart-form a:hover {
+    color: #0000ff;
+}
+
+form.woocommerce-cart-form input {
+    background-color: #cccccc;
+    color: #fff;
+}
+
+input#coupon_code.input-text, button.button {
+    background-color: #e0e0e0;
+    color: #000;
+    margin-top: 0.2rem;
+}
+
+button.button {
+    background-color: #fff;
+    color: #000;
+}
+
+a.checkout-button.button.alt.wc-forward, form.woocommerce-cart-form a.remove:hover  {
+    background-color: #00aeef;
+}
+
+a.checkout-button.button.alt.wc-forward:hover {
+    background-color: #b6b6b6;
+    color: #000;
+}
