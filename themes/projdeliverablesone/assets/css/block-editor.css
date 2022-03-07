@@ -586,9 +586,21 @@ div.footer3 section#block-11.widget.widget_block li a svg {
 /* Privacy Policy Styling */
 p {
     color: #7c7c7c;
-    font-size: 20px;
 }
 
-h2 {
+div.entry-content p {
+    font-size: 1.2rem;
+}
+
+div.entry-content h2 {
     font-weight: bold;
+}
+
+/* Refund Page Styling */
+div.entry-content h3 {
+    font-weight: bold;
+}
+
+div.entry-content p {
+    font-size: 1.3rem;
 }
