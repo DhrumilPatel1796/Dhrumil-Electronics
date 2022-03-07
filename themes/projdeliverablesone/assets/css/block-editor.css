@@ -604,3 +604,35 @@ div.entry-content h3 {
 div.entry-content p {
     font-size: 1.3rem;
 }
+
+/* Products Page Styling */
+button.wp-block-button__link.add_to_cart_button.wc-block-components-product-button__button:hover {
+    background-color: #00aeef;
+    color: #000;
+    font-weight: 600;
+}
+
+button.wp-block-button__link.add_to_cart_button.wc-block-components-product-button__button {
+    font-size: 1.0rem;
+}
+
+section.related.products {
+    margin-bottom: -1rem;
+}
+
+.woocommerce .quantity .qty {
+    width: 2.5rem !important;
+    height: 1.5rem !important;
+    margin-top: 0.3rem !important;
+}
+
+button.single_add_to_cart_button.button.alt:hover {
+    background-color: #00aeef !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+button.single_add_to_cart_button.button.alt {
+    background-color: #b6b6b6 !important;
+    color: #000 !important;
+}
