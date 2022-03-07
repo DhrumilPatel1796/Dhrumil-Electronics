@@ -517,6 +517,16 @@ div.woocommerce-notices-wrapper {
     padding-top: 1.0rem;
 }
 
+.woocommerce p.cart-empty.woocommerce-info {
+    background-color: #b6b6b6;
+    color: #fff;
+}
+
+p.return-to-shop a.button.wc-backward:hover {
+    background-color: #00aeef;
+    color: #fff;
+}
+
 /* Checkout Styling */
 
 div.woocommerce-form-coupon-toggle {
