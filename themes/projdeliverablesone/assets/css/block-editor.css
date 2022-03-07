@@ -456,6 +456,21 @@ div.woocommerce.columns-4 ul.products.columns-4 h2, div.woocommerce.columns-4 bd
     font-size: 1.0rem;
 }
 
+/* Shop Page Styling */
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    margin-right: 4.0rem;
+}
+
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
+    background-color: #00aeef;
+    color: #fff;
+}
+
+ul.products.columns-4 li a span.onsale {
+    margin-right: 3.0rem !important;
+    margin-top: 0.2rem !important;
+}
+
 /* Cart Page Styling */
 form.woocommerce-cart-form {
     margin-top: 2.0rem;
