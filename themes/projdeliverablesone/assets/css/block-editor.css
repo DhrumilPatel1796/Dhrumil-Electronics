@@ -582,3 +582,13 @@ div.footer3 section#block-11.widget.widget_block li a svg {
     width: 100%;
     height: 40px;
 }
+
+/* Privacy Policy Styling */
+p {
+    color: #7c7c7c;
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: bold;
+}
