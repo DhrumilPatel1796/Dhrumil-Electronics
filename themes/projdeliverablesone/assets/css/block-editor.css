@@ -636,3 +636,54 @@ button.single_add_to_cart_button.button.alt {
     background-color: #b6b6b6 !important;
     color: #000 !important;
 }
+
+/* Account Page Styling */
+div.wp-block-button.aligncenter.has-custom-width.wp-block-button__width-100.orders-arrow.is-style-outline a:hover {
+    background-color: #00aeef;
+    border-radius: 2.0rem;
+    border-color: #000;
+    color: #fff;
+}
+
+div.wp-block-button.has-custom-width.wp-block-button__width-100.save-arrow.is-style-outline a:hover {
+    background-color: #00aeef;
+    border-radius: 2.0rem;
+    border-color: #000;
+    color: #fff;
+}
+
+div.wp-block-button.has-custom-width.wp-block-button__width-100.general-arrow.is-style-outline a:hover {
+    background-color: #00aeef;
+    border-radius: 2.0rem;
+    border-color: #000;
+    color: #fff;
+}
+
+div.wp-block-button.has-custom-width.wp-block-button__width-100.login-arrow.is-style-outline a:hover {
+    background-color: #00aeef;
+    border-radius: 2.0rem;
+    border-color: #000;
+    color: #fff;
+}
+
+div.wp-block-button.has-custom-width.wp-block-button__width-100.address-arrow.is-style-outline a:hover {    
+    background-color: #00aeef;
+    border-radius: 2.0rem;
+    border-color: #000;
+    color: #fff;
+}
+
+div.wp-block-button.has-custom-width.wp-block-button__width-100.default-arrow.is-style-outline a:hover {    
+    background-color: #00aeef;
+    border-radius: 2.0rem;
+    border-color: #000;
+    color: #fff;
+}
+
+div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is-style-outline a:hover {    
+    background-color: #00aeef;
+    border-radius: 2.0rem;
+    border-color: #000;
+    color: #fff;
+
+}
