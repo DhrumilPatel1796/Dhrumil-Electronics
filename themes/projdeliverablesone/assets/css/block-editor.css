@@ -152,32 +152,9 @@ div.entry-content {
     padding-top: 20px;
 }
 
-.site-title button, .site-login button {
-    float: right;
-    background-color: #00aeef;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: "Arial, Narrow";
-    font-weight: 600;
-    margin-right: 150px;
-    font-size: 18px;
-    margin-top: -120px;
-}
-
-.site-title button:hover, .site-login button:hover {
-    background-color: #e0e0e0;
-    color: red;
-    font-weight: 600;
-} 
-
-.site-login button {
-    margin-top: -135px;
-    margin-right: 50px;
-}
-
 .site-search {
-    margin-top: -55px;
+    margin-top: -45px;
+    margin-bottom: 40px;
 }
 
 .site-search input {
@@ -217,8 +194,7 @@ div#wpforms-confirmation-245.wpforms-confirmation-container-full.wpforms-confirm
 
 .menu {
     display: flex;
-    height: 3.0rem;
-    padding-top: 1.5rem;
+    height: 1.0rem;
     flex-direction: row;
     color: #000;
     font-weight: bolder;
@@ -228,18 +204,6 @@ div#wpforms-confirmation-245.wpforms-confirmation-container-full.wpforms-confirm
 
 .menu li {
     list-style-type: none;
-}
-
-ul.sub-menu {
-    display: none;
-}
-
-ul.sub-menu:hover {
-    display: block !important;
-    position: absolute;
-    background-color: #7c7c7c !important;
-    width: 100px;
-    height: 100px;
 }
 
 .care-list li, section.widget.widget_block li {
@@ -259,12 +223,13 @@ ul.sub-menu:hover {
     color: white;
 }
 
-.nav_menu h3 {
-    font-size: 30px;
-    margin-left: 210px;
+.menu h3, .menu a {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
 }
 
-.nav_menu h3:hover, .nav_menu a:hover {
+.menu h3:hover, .menu a:hover {
     color: red;
 }
 
@@ -275,7 +240,7 @@ h1, a{
 }
 
 ul#primary-menu.menu {
-    height: 3.0rem;
+    height: 2.0rem;
 }
 
 
@@ -686,4 +651,41 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is
     border-color: #000;
     color: #fff;
 
+}
+
+
+.sub-menu li {
+    display: none;
+}
+
+.menu li:hover {
+    display: block !important;
+}
+
+
+/* My Account Button Styling */
+.account a, .login a {
+    color: #000;
+    background-color: #00aeef;
+    margin-top: -11.5rem;
+    border-radius: 1.0rem;
+    margin-left: 60.0rem;
+    border: solid #000 0px;
+    max-height: 40px;
+}
+
+.login a {
+    margin-left: 80.0rem;
+    margin-top: -12.0rem;
+}
+
+.account a:hover, .login a:hover {
+    color: #fff;
+    background-color: #cccccc;
+    border: solid #000 0px;
+}
+
+.account:hover, .login:hover {
+    text-decoration: none;
+    color: #fff !important;
 }
