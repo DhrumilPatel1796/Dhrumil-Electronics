@@ -663,7 +663,7 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is
 }
 
 
-/* My Account Button Styling */
+/* My Account & Login Button Styling */
 .account a, .login a {
     color: #000;
     background-color: #00aeef;
@@ -688,4 +688,24 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is
 .account:hover, .login:hover {
     text-decoration: none;
     color: #fff !important;
+}
+
+/* Blog Page Styling */
+div.entry-meta, footer.entry-footer {
+    display: none;
+}
+
+header.entry-header h2.entry-title  {
+    height: 6.0rem;
+    background-color: #b6b6b6;
+}
+
+h2.entry-title a {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1.0rem;
+}
+
+h2.entry-title a:hover {
+    color: #00aeef;
 }
