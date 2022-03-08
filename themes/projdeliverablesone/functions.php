@@ -50,6 +50,7 @@ function projdeliverablesone_setup() {
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'projdeliverablesone' ),
+			'menu-buttons' => esc_html__( 'Buttons', 'projdeliverablesone' ),
 		)
 	);
 
