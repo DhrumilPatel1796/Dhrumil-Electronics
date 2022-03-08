@@ -35,44 +35,6 @@
 			<?php
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title">
-					<a href="
-						<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					</a>
-				</h1>
-				<?php
-			else :
-				?>
-				<p class="site-title">
-					<a href="
-						<?php echo esc_url( home_url( '/my-account' ) ); ?>" rel="home"><button>My Account</button>
-					</a>
-				</p>
-				<?php
-			endif;
-			?>
-			<?php
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title">
-					<a href="
-						<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					</a>
-				</h1>
-				<?php
-			else :
-				?>
-				<p class="site-login">
-					<a href="
-						<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><button>Login</button>
-					</a>
-				</p>
-				<?php
-			endif;
-			?>
-			<?php
-			if ( is_front_page() && is_home() ) :
-				?>
 				<h1 class="search">
 					<a href="
 						<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -96,6 +58,13 @@
 				array(
 					'theme_location' => 'menu-primary',
 					'menu_id'        => 'primary-menu',
+				)
+			);
+
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-buttons',
+					'menu_id'        => 'buttons-menu',
 				)
 			);
 			?>
