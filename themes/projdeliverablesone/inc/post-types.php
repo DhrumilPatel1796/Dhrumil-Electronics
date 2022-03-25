@@ -195,7 +195,7 @@ function wpdocs_accessory_init() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 20,
-        'menu_icon'          => 'dashicons-smartphone',
+        'menu_icon'          => 'dashicons-yes',
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
         'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
