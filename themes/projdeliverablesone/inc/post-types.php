@@ -203,3 +203,53 @@ function wpdocs_accessory_init() {
     register_post_type( 'Accessory', $args );
 }
 add_action( 'init', 'wpdocs_accessory_init' );
+
+
+function wpdocs_desktop_init() {
+    $labels = array(
+        'name'                  => _x( 'Desktops', 'Post type general name', 'projdeliverablesone' ),
+        'singular_name'         => _x( 'Desktop', 'Post type singular name', 'projdeliverablesone' ),
+        'menu_name'             => _x( 'Desktops', 'Admin Menu text', 'projdeliverablesone' ),
+        'name_admin_bar'        => _x( 'Desktop', 'Add New on Toolbar', 'projdeliverablesone' ),
+        'add_new'               => __( 'Add New', 'projdeliverablesone' ),
+        'add_new_item'          => __( 'Add New desktop', 'projdeliverablesone' ),
+        'new_item'              => __( 'New desktop', 'projdeliverablesone' ),
+        'edit_item'             => __( 'Edit desktop', 'projdeliverablesone' ),
+        'view_item'             => __( 'View desktop', 'projdeliverablesone' ),
+        'all_items'             => __( 'All desktops', 'projdeliverablesone' ),
+        'search_items'          => __( 'Search desktops', 'projdeliverablesone' ),
+        'parent_item_colon'     => __( 'Parent desktops:', 'projdeliverablesone' ),
+        'not_found'             => __( 'No desktops found.', 'projdeliverablesone' ),
+        'not_found_in_trash'    => __( 'No desktops found in Trash.', 'projdeliverablesone' ),
+        'featured_image'        => _x( 'Desktop Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'projdeliverablesone' ),
+        'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'projdeliverablesone' ),
+        'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'projdeliverablesone' ),
+        'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'projdeliverablesone' ),
+        'archives'              => _x( 'Desktop archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'projdeliverablesone' ),
+        'insert_into_item'      => _x( 'Insert into desktop', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'projdeliverablesone' ),
+        'uploaded_to_this_item' => _x( 'Uploaded to this desktop', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'projdeliverablesone' ),
+        'filter_items_list'     => _x( 'Filter desktops list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'projdeliverablesone' ),
+        'items_list_navigation' => _x( 'Desktops list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'projdeliverablesone' ),
+        'items_list'            => _x( 'Desktops list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'projdeliverablesone' ),
+    );     
+    $args = array(
+        'labels'             => $labels,
+        'description'        => 'Desktop custom post type.',
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'desktop' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 20,
+        'menu_icon'          => 'dashicons-desktop',
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
+        'taxonomies'         => array( 'category', 'post_tag' ),
+        'show_in_rest'       => true
+    );
+    register_post_type( 'Desktop', $args );
+}
+add_action( 'init', 'wpdocs_desktop_init' );
