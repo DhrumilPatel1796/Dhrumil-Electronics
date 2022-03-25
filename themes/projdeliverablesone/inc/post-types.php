@@ -95,7 +95,7 @@ function wpdocs_electronic_init() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 20,
-        'menu_icon'          => 'dashicons-buddicons-topics',
+        'menu_icon'          => 'dashicons-printer',
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
         'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
