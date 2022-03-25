@@ -40,7 +40,7 @@ function wpdocs_technology_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'technology' ),
+        'rewrite'            => array( 'slug' => 'technologies' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
@@ -50,7 +50,7 @@ function wpdocs_technology_init() {
         'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
     );
-    register_post_type( 'Technology', $args );
+    register_post_type( 'projdeliverablesone_technology', $args );
 }
 add_action( 'init', 'wpdocs_technology_init' );
 
