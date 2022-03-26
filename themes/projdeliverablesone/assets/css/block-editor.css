@@ -709,3 +709,23 @@ h2.entry-title a {
 h2.entry-title a:hover {
     color: #00aeef;
 }
+
+/* Custom Post type Styling */
+.title h3 {
+    color: #fff;
+    margin-top: 1.0rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.title p {
+    color: #cccccc;
+    margin-top: 1.0rem;
+    font-size: 1.0rem;
+    text-align: justify;
+}
+
+.title img {
+    margin-left: 5.2rem;
+    margin-top: 1.0rem;
+}
