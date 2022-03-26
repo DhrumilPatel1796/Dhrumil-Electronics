@@ -8,9 +8,9 @@
  */
 
 if ( ! is_singular( 'electronic' ) ) {
-    echo 'This is the content file for archives electronics';
+    echo 'This is the content for archive electronics';
 } else {
-    echo 'This is the content file for single electronics';
+    echo 'This is the content for single electronics';
 }
 
 ?>
