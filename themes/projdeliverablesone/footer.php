@@ -12,6 +12,40 @@
 ?>
 
 	<footer>
+
+	<?php
+		$electronic_args = array(
+			'post_type' 	 => array( 'electronic' ),
+			'post_status' 	 => 'publish',
+			'posts_per_page' => 3,
+			'orderby'		 => 'rand',
+			'post__not_in'   => array( get_the_ID() ),
+		);
+
+		$electronic_query = new WP_Query( $electronic_args );
+		?>
+		<div class="grid-container">
+			<div class="grid-x grid-margin-x grid-padding-y">
+				<?php
+					if ( $electronic_query->have_posts() ) {
+						while ( $electronic_query->have_posts() ) {
+							$electronic_query->the_post();
+							?>
+							<div class="cell small-12 medium-4">
+								<?php 
+								the_post_thumbnail();
+								the_title( '<h3>', '</h3>' );
+								the_excerpt(); 
+								?>
+							</div>
+							<?php
+						}
+					wp_reset_postdata();
+					}
+				?>
+			</div>
+		</div>
+
 		<div class="lists">
 			<div class="footer1">
 
