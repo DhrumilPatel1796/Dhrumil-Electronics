@@ -31,7 +31,7 @@
 						while ( $electronic_query->have_posts() ) {
 							$electronic_query->the_post();
 							?>
-							<div class="cell small-12 medium-4">
+							<div class="cell small-12 medium-4 title">
 								<?php 
 								the_post_thumbnail();
 								the_title( '<h3>', '</h3>' );
