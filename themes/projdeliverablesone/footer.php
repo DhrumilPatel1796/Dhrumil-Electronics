@@ -33,8 +33,9 @@
 							?>
 							<div class="cell small-12 medium-4 title">
 								<?php 
-								the_post_thumbnail();
-								the_title( '<h3>', '</h3>' );
+								the_post_thumbnail();?>
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<?php
 								the_excerpt(); 
 								?>
 							</div>
@@ -45,33 +46,29 @@
 				?>
 			</div>
 		</div>
-
-		<div class="lists">
-			<div class="footer1">
-
-			<?php
-				if(is_active_sidebar('footer-1')) {
-					dynamic_sidebar('footer-1');
-				}
-				?>
-			</div><!-- .footer 1 -->
-			<div class="footer2">
-
-			<?php
-				if(is_active_sidebar('footer-2')) {
-					dynamic_sidebar('footer-2');
-				}
-				?>
-			</div><!-- .footer 2 -->
-			<div class="footer3">
-
-			<?php
-				if(is_active_sidebar('footer-3')) {
-					dynamic_sidebar('footer-3');
-				}
-				?>
-			</div><!-- .footer 3 -->
-		</div>
+				<div class="lists">
+					<div class="footer1">
+							<?php
+								if(is_active_sidebar('footer-1')) {
+									dynamic_sidebar('footer-1');
+								}
+								?>
+					</div><!-- .footer 1 -->
+					<div class="footer2">
+							<?php
+								if(is_active_sidebar('footer-2')) {
+									dynamic_sidebar('footer-2');
+								}
+								?>
+					</div><!-- .footer 2 -->
+					<div class="footer3">
+							<?php
+								if(is_active_sidebar('footer-3')) {
+									dynamic_sidebar('footer-3');
+								}
+								?>
+					</div><!-- .footer 3 -->
+				</div>
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
