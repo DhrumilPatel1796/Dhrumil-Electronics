@@ -712,10 +712,17 @@ h2.entry-title a:hover {
 
 /* Custom Post type Styling */
 .title h3 {
-    color: #fff;
     margin-top: 1.0rem;
     font-size: 1.8rem;
     text-align: center;
+}
+
+.title a {
+    color: #fff;
+}
+
+.title a:hover {
+    color: #0000ff;
 }
 
 .title p {
@@ -728,4 +735,149 @@ h2.entry-title a:hover {
 .title img {
     margin-left: 5.2rem;
     margin-top: 1.0rem;
+}
+
+/* Styling information about electronics post */
+.listing li {
+    text-align: justify;
+}
+
+#primary {
+    background-color: red;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.heading strong {
+    color: #000;
+}
+
+.post-thumbnail img {
+    margin-top: 2.0rem;
+}
+
+/* Override Mobile */
+@media print,
+screen and (max-device-width: 375px) {
+
+    .site-branding a img {
+        width: 25%;
+    }
+
+    p.site-search {
+        width: 100%;
+        margin-top: 2.0rem;
+        margin-left: -12.0rem;
+    }
+
+    .account a, .login a {
+        color: #000;
+        background-color: #00aeef;
+        border-radius: 1.0rem;
+        margin-left: 3.0rem;
+        margin-top: -15.0rem;
+        font-size: 1.0rem;
+        border: solid #000 0px;
+        max-height: 40px;
+    }
+
+    .login a {
+        margin-top: -15.5rem;
+        margin-left: 17.0rem;
+    }
+
+    ul#primary-menu.menu li a{
+        font-size: 1.0rem;
+    }
+
+    ul#primary-menu.menu {
+        height: 5.0rem;
+    }
+
+    /* My Account Page Styling */
+    h3.title_orders, h3.title_account {
+        color: #000;
+        margin-left: -19.5rem;
+    }
+
+    div.wp-block-button.aligncenter.has-custom-width.wp-block-button__width-100.orders-arrow.is-style-outline a,
+    div.wp-block-button.has-custom-width.wp-block-button__width-100.save-arrow.is-style-outline a,
+    div.wp-block-button.has-custom-width.wp-block-button__width-100.general-arrow.is-style-outline a,
+    div.wp-block-button.has-custom-width.wp-block-button__width-100.login-arrow.is-style-outline a, 
+    div.wp-block-button.has-custom-width.wp-block-button__width-100.address-arrow.is-style-outline a, 
+    div.wp-block-button.has-custom-width.wp-block-button__width-100.default-arrow.is-style-outline a, 
+    div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is-style-outline a{
+        width: 35%;
+        font-size: 1.2rem;
+        margin-left: -39.0rem;
+    }
+
+    /* Home Page Styling */
+    img.wp-image-493, img.wp-image-496 {
+        width: 35%;
+        margin-left: -39.0rem;
+    }
+
+    figure.wp-block-gallery.has-nested-images.columns-4 {
+        width: 90%;
+        margin: 1.0rem;
+    }
+
+    /* About Page Styling */
+    h2#our-products.product_title, h2#our-services.services_title {
+        margin-left: -20.0rem;
+        color: #000;
+    }
+
+    p.products, p.services {
+        width: 90%;
+        font-size: 20px !important;
+        text-align: justify;
+    }
+
+    /* Blog Page Styling */
+    p.cell-first-para, p.cell-second-para, p.tech-first-para, p.tech-second-para {
+        width: 90%;
+    }
+
+    h2.cell-reference, h2.tech-reference {
+        margin-left: -20.0rem;
+        color: #000;
+    }
+
+    p.cell-link, p.tech-link {
+        width: 90%;
+    }
+
+    /* Shop Page Styling */
+    ul.products.columns-4 {
+        width: 40%;
+        margin-left: 1.0rem !important;
+    }
+
+    p.woocommerce-result-count {
+        padding-left: 1.0rem;
+    }
+
+    /* Product Page Styling */
+    ul.wc-block-grid__products {
+        width: 50%;
+        margin-left: -5.0rem;
+    }
+
+    /* Cart Page Styling */
+    form.woocommerce-cart-form {
+        width: 35%;
+        margin-left: 0.8rem;
+    }
+
+    div.cart_totals h2 {
+        width: 35%;
+    }
+
+    table tbody .cart-subtotal, table tbody .order-total {
+        width: 20%;
+    }
+
 }
