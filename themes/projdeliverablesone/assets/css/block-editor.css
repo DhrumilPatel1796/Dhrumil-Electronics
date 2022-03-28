@@ -1,162 +1,58 @@
-.wp-block-quote {
-    color: blue;
-}
 
-.wp-block-quote.is-style-fancy-quote {
-    color: tomato;
-}
-
+/* adding some styling to the entry content width */ 
 .entry-content > * {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.alignwide {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table td {
-    border: 2px solid #000;
-    font-size: 20px;
-}
-
+/* Adding some styling to the entier content */
 div.entry-content {
     margin-top: 2.0rem;
     background-color: lightgray;
 }
 
-li {
-    list-style-position: inside;
-    font-size: 30px;
-    text-align: center;
-}
-
+/* Styling to the fancy quote */
 .wp-block-quote.wp-block-quote.is-style-fancy-quote {
     font-size: 25px;
     text-align: center;
 }
 
-h2{
-    text-align: center;
-}
-
-.wp-calender {
-    width: 100px;
-}
-
-caption {
-    font-size: 30px;
-}
-
+/* Changing the background color of footer, header and aside bars */
 header, footer, aside {
     background-color: #7c7c7c;
 }
 
-article, aside {
-    background-color: #cccccc;
-}
-
+/* Adding some margin to the logo */
 img.custom-logo {
     margin-top: 1rem;
     margin-left: 1rem;
 }
 
-li.page_item.page-item-98, li.page_item.page-item-16, li.page_item.page-item-100, li.page_item.page-item-96, li.page_item.page-item-156, li.page_item.page-item-146, li.page_item.page-item-147, li.page_item.page-item-148, li.page_item.page-item-153, li.page_item.page-item-145 {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.custom-menu-button {
-    font-size: 20px;
-    color: white;
-}
-
-p {
-    font-family: "Arial Narrow";
-    color: #000;
-    font-weight: 600;
-    margin-left: 3rem;
-}
-
-img.wp-image-61, img.wp-image-62, img.wp-image-66, img.wp-image-64 {
-    margin: 40px;
-}
-
-img.wp-image-64 {
-    margin: 50px;
-}
-
+/* Styling p tag of the about page */
 p.products, p.services {
     color: #7c7c7c;
     font-weight: 400;
     font-family: Franklin Gothic Demi;
 }
 
-p.services {
-    margin-bottom: 50px;
-}
-
-h2#our-services.services_title {
-    font-family: Arial, Arial, Helvetica, sans-serif;
-}
-
-strong {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-p.full_name, p.email, p.phone, p.notes {
-    width: 1000px;
-    height: 30px;
-    background-color: #b6b6b6;
-    text-align: center;
-    padding-top: 10px;
-}
-
-p.notes {
-    height: 60px;
-    padding-top: 30px;
-    margin-bottom: 50px;
-}
-
-div.wp-block-button.submit {
-    margin-left: 450px;
-    border-radius: 0px;
-    margin-bottom: 50px;
-}
-
-.site-footer {
-    padding-top: 50px;
-    height: 220px;
-}
-
-.site-footer .customer a, .corporate a {
-    color: white;
-    background: none;
-    font-size: 20px;
-    text-decoration: none;
-}
-
+/* Displaying none to the title of each custom posts */
 h1.entry-title {
     display: none;
 }
 
+/* adding some margin to the main entry content */
 div.entry-content {
     margin-top: -37px;
 }
 
-.entry-content p {
-    padding-top: 20px;
-}
-
+/* Adding some margin to the search input field */
 .site-search {
     margin-top: -45px;
     margin-bottom: 40px;
 }
 
+/* Styling search */
 .site-search input {
     width: 70%;
     text-align: center;
@@ -166,32 +62,12 @@ div.entry-content {
     border: none;
 }
 
+/* Changing the color of placeholder in the search */
 .site-search input::placeholder {
     color: #000;
 }
 
-.site-footer {
-    display: flex;
-    flex-direction: row;
-}
-
-a.post-edit-link {
-    display: none;
-}
-
-div.wpforms-container.wpforms-container-full {
-    margin-left: 20.0rem;
-}
-
-div.wpforms-container.wpforms-container-full textarea#wpforms-245-field_2.wpforms-field-medium.wpforms-field-required {
-    width: 60%;
-}
-
-div#wpforms-confirmation-245.wpforms-confirmation-container-full.wpforms-confirmation-scroll {
-    width: 50%;
-    margin-left: 0rem;
-}
-
+/* Adding some styling to the primary menu and displaying flex to it */
 .menu {
     display: flex;
     height: 1.0rem;
@@ -202,10 +78,12 @@ div#wpforms-confirmation-245.wpforms-confirmation-container-full.wpforms-confirm
     background-color: #00aeef;
 }
 
+/* Displaying list tyoe none to the menu */
 .menu li {
     list-style-type: none;
 }
 
+/* Adding some styling to the lists in the footer */
 .care-list li, section.widget.widget_block li {
     color: #fff;
     font-size: 1.0rem;
@@ -213,74 +91,68 @@ div#wpforms-confirmation-245.wpforms-confirmation-container-full.wpforms-confirm
     margin-top: 0.5rem;
 }
 
+/* Displaying flex to the footer content */
 .lists {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#block-6 h2, #block-8 h2 {
-    color: white;
-}
-
+/* Changing the font size and adding some styling to the menu links */
 .menu h3, .menu a {
     font-size: 20px;
     color: #000;
     font-weight: bold;
 }
 
+/* Hovering the menu links */
 .menu h3:hover, .menu a:hover {
     color: red;
 }
 
+/* Styling h1 and a hyperlink tag in the menu */
 h1, a{
-    /* background-color: #00aeef; */
     text-decoration: none;
     color: #000;
 }
 
+/* Giving height to the menu */
 ul#primary-menu.menu {
     height: 2.0rem;
 }
 
 
-a.custom-logo-link {
-    background: none;
-}
-
+/* Displaying the navigation lists of myaccount button */
 .woocommerce-MyAccount-navigation ul li {
     display: none;
 }
 
+/* Displyaing none to the content of myaccount button */
 div.woocommerce-MyAccount-content {
     display: none;
 }
 
+/* Changing the width of all the product on product page */
 div.wc-block-components-product-image.wc-block-grid__product-image img {
     width: 50%;
 }
 
-div.wc-block-components-product-image.wc-block-grid__product-image a {
-    background: none;
-}
-
-.wc-block-components-product-name {
-    background: none;
-    font-size: 20px;
-}
-
+/* Changing the font size of the original product pize of the product on product page */
 del.wc-block-components-product-price__regular.wc-block-grid__product-price__regular {
     font-size: 17px;
 }
 
+/* Changing the font size of the discounted prices of the product on product page */
 ins.wc-block-components-product-price__value.is-discounted.wc-block-grid__product-price__value {
     font-size: 17px;
 }
 
+/* Changing the font size of the add to cart button on product page */
 button.wp-block-button__link.add_to_cart_button.wc-block-components-product-button__button {
     font-size: 15px;
 }
 
+/* Styling sale button on product page */
 div.wc-block-components-product-sale-badge.wc-block-components-product-sale-badge--align-right.wc-block-grid__product-onsale {
     font-size: 15px;
     margin-right: 2.5rem;
@@ -290,57 +162,63 @@ div.wc-block-components-product-sale-badge.wc-block-components-product-sale-badg
     border-radius: 2.0rem;
 }
 
+/* Displaying none to the navigation and comments section on the single product page */
 .navigation.post-navigation, #comments {
     display: none;
 }
 
+/* Changing the width of the product images in the related products section on single product page */
 section.related.products img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
     width: 80%;
     margin-top: 2.0rem;
 }
 
+/* Styling sale button in related products section on single product page */
 section.related.products span.onsale {
     font-size: 15px;
     background: red;
     color: #fff;
-    margin-top: 2.0rem;
+    margin-top: 3.0rem;
     margin-right: 1.0rem !important;
 }
 
+/* Changing the font size of the each product title in related products section on single product page */
 section.related.products h2.woocommerce-loop-product__title {
     font-size: 18px !important;
 }
 
-section.related.products bdi {
-    margin-left: 4.0rem;
-    font-size: 16px;
-}
 
+/* Styling add to cart button on single product page in related product section */
 section.related.products a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     font-size: 1.0rem;
     border-radius: 2.0rem;
     background-color: #00aeef;
 }
 
+/* Styling and hovering add to cart button on single product page in related products section */
 section.related.products a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
     background-color: #7c7c7c;
     color: #fff;
 }
 
+/* Displaying none to description tab on single product page */
 ul.tabs.wc-tabs {
     display: none;
 }
 
+/* Giving some margin on product image on single product page */
 div.woocommerce-product-gallery__image a img.wp-post-image {
     margin-top: 4.0rem;
     width: 10%;
 }
 
+/* Giving width to the product image on single product page */
 .woocommerce div.product div.images img {
     width: 40% !important;
     margin-left: 4.0rem !important;
 }
 
+/* Styling sale button on single product page */
 .woocommerce span.onsale {
     margin-top: 3.0rem !important;
     margin-left: 2.0rem !important;
@@ -349,260 +227,313 @@ div.woocommerce-product-gallery__image a img.wp-post-image {
     font-weight: bold !important;
 }
 
+/* Displaying none of search on product single item page */
 a.woocommerce-product-gallery__trigger {
     display: none;
 }
 
+/* Giving some margin to a product summary of single product item page */
 div.summary.entry-summary {
     margin-top: 6.0rem;
     margin-right: 1.0rem;
 }
 
+/* Changing the a hyperlink tag on single product item page */
 .product_meta a {
     background: none;
     color: red;
     font-weight: bold;
 }
 
-form.cart, input {
-    font-size: 1.0rem;
-}
-
-input {
-    margin-top: 0.4rem;
-}
-
-bdi {
-    margin-right: 12.0rem;
-}
-
-div.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab p {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #00aeef;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
+/* Styling footer title */
 div.footer2 h2, div.footer1 h2, div.footer3 h2 {
     margin-top: 0.5rem;
     color: #fff;
 }
 
-section.widget.widget_block ul {
-    margin-top: 1.0rem;
-}
-
-section.widget.widget_block.widget_text strong, .has-text-align-center {
-    color: #fff;
-    margin-top: 2.0rem;
-}
-
-nav.menu a {
-    color: #000;
-    font-weight: bolder;
-}
-
+/* Styling showing all results content on shop page */
 div.woocommerce.columns-4 p {
-    margin-top: 4.0rem;
+    margin-top: 3.5rem;
     font-size: 2.0rem;
 }
 
+/* Changing product images width on shop page */
 div.woocommerce.columns-4 ul.products.columns-4 img {
     width: 70%;
 }
 
+/* Adding margin bottom on the shop page */
 div.woocommerce.columns-4 {
-    margin-bottom: -1.0rem;
+    margin-bottom: -1.5rem;
 }
 
-div.woocommerce.columns-4 ul.products.columns-4 h2, div.woocommerce.columns-4 bdi {
-    margin-right: 4.0rem;
-    font-size: 1.0rem;
+
+/* About Page Styling */
+
+/* Changing color of title on about page */
+h2.product_title#our-products strong, h2.services_title#our-services {
+    color: #000;
 }
 
 /* Shop Page Styling */
+
+/* Giving some margin right to add to cart button on shop page */
 a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     margin-right: 4.0rem;
 }
 
+/* Hovering and changing color of add to cart buttons on shop page */
 a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
     background-color: #00aeef;
     color: #fff;
 }
 
+/* Styling onsale button on shop page */
 ul.products.columns-4 li a span.onsale {
     margin-right: 3.0rem !important;
     margin-top: 0.2rem !important;
 }
 
+/* Giving some margin top to default sorting drop down button on shop page */
+select.orderby {
+    margin-top: 5.0rem;
+}
+
 /* Cart Page Styling */
+
+/* Giving margin top to all the content on cart page */
 form.woocommerce-cart-form {
     margin-top: 2.0rem;
 }
 
+/* Styling table content on cart page */
 form.woocommerce-cart-form td, form.woocommerce-cart-form a {
     background-color: #b6b6b6;
     color: #fff;
 }
 
+/* Styling table on cart page */
 form.woocommerce-cart-form th {
     border: 0.1rem solid #000;
     text-align: center;
     font-size: 1.5rem;
 }
 
+/* Adding border on cart totals sections on cart page */
 table.shop_table.shop_table_responsive th {
     border: 0.1rem solid #000;
 }
 
+/* Hovering and changing a hyperlink color on product name on cart page */
 form.woocommerce-cart-form a:hover {
     color: #0000ff;
 }
 
-form.woocommerce-cart-form input {
-    background-color: #cccccc;
-    color: #fff;
-}
-
+/* Styling coupon code  input text button on cart page */
 input#coupon_code.input-text, button.button {
     background-color: #e0e0e0;
     color: #000;
     margin-top: 0.2rem;
 }
 
-button.button {
-    background-color: #fff;
-    color: #000;
-}
 
+/* Hovering and styling delete item button on cart page */
 a.checkout-button.button.alt.wc-forward, form.woocommerce-cart-form a.remove:hover  {
     background-color: #00aeef;
 }
 
+/* Hovering and styling proceed to checkout button on cart page */
 a.checkout-button.button.alt.wc-forward:hover {
     background-color: #b6b6b6;
     color: #000;
 }
 
-form.woocommerce-ordering {
-    padding-top: 2.5rem;
-}
-
+/* Styling deleted items and wants to undo items message on cart page */
 div.woocommerce-message {
     margin-top: 2.2rem;
 }
 
+/* Styling deleted items and wants to undo items message on cart page */
 div.woocommerce-notices-wrapper {
     padding-top: 1.0rem;
 }
 
+/* Styling your cart is currently empty section on cart page */
 .woocommerce p.cart-empty.woocommerce-info {
     background-color: #b6b6b6;
     color: #fff;
 }
 
+/* Hovering and styling return to shop button when cart is empty on cart page */
 p.return-to-shop a.button.wc-backward:hover {
     background-color: #00aeef;
     color: #fff;
 }
 
-/* Checkout Styling */
-
-div.woocommerce-form-coupon-toggle {
-    margin-top: 2.3rem;
+/* changing font color of cart totals section title on cart page */
+div.cart_totals h2 {
+    color: #000;
 }
 
+/* Changing font color of content of cart totals section on the cart page */
+tr.cart-subtotal, tr.order-total {
+    color: #000;
+}
+
+/* Checkout Styling */
+
+/* Giving margin top to comments section on checkout page */
 textarea#order_comments.input-text {
     margin-top: 2.0rem;
 }
 
+/* Changing the width of additional information and comments section on checkout page */
 p#order_comments_field.form-row.notes {
-    width: 70%;
+    width: 100%;
 }
 
+/* Changing color of place order button on checkout page */
 button#place_order.button.alt {
     background-color: #00aeef;
 }
 
+/* Hovering and styling the place order button on checkout page */
 button#place_order.button.alt:hover {
     background-color: #7c7c7c;
     color: #000;
 }
 
-div#order_review {
-    padding-bottom: 7.0rem;
+/* Changing title font color on the checkout page */
+div.woocommerce-billing-fields h3, div.woocommerce-additional-fields h3 {
+    color: #000;
+}
+
+/* Changing font color of cart totals section table content on cart page */
+td.product-name, td.product-total {
+    color: #000;
 }
 
 /* Footer Styling */
+
+/* Changing font color li tags in the footer */
 section#block-28.widget.widget_block li a, section#block-27.widget.widget_block li a {
     color: #fff;
 }
 
+/* Hovering and changing font color of all li tags in the footer */
 section#block-28.widget.widget_block li a:hover, section#block-27.widget.widget_block li a:hover {
     color: #00aeef;
 }
 
+/* Styling social media icons in the footer */
 div.footer3 section#block-11.widget.widget_block li a svg {
     width: 100%;
     height: 40px;
 }
 
 /* Privacy Policy Styling */
+
+/* changing font color of all p tags on privacy policy page */
 p {
     color: #7c7c7c;
 }
 
+/* Changing font size of all p tags on privacy policy page */
 div.entry-content p {
     font-size: 1.2rem;
 }
 
+/* Styling all h2 tags in privacy policy page */
 div.entry-content h2 {
     font-weight: bold;
+    color: #000;
 }
 
 /* Refund Page Styling */
-div.entry-content h3 {
+
+/* giving font weight and coloring title on refund and return page */
+div.entry-content h3, div.entry-content h2 {
     font-weight: bold;
+    color: #000;
 }
 
+/* Coloring all li tags in refund and return page */
+div.entry-content ul li {
+    color: #000;
+}
+
+/* Styling all p tags opn refund and return page */
 div.entry-content p {
     font-size: 1.3rem;
 }
 
 /* Products Page Styling */
+
+/* Hovering and styling add to cart button on product page */
 button.wp-block-button__link.add_to_cart_button.wc-block-components-product-button__button:hover {
     background-color: #00aeef;
     color: #000;
     font-weight: 600;
 }
 
-button.wp-block-button__link.add_to_cart_button.wc-block-components-product-button__button {
-    font-size: 1.0rem;
-}
-
-section.related.products {
-    margin-bottom: -1rem;
-}
-
+/*Styling quantity button on single product page */
 .woocommerce .quantity .qty {
     width: 2.5rem !important;
     height: 1.5rem !important;
     margin-top: 0.3rem !important;
 }
 
+/* Hovering add to cart button in cart page with important mark */
 button.single_add_to_cart_button.button.alt:hover {
     background-color: #00aeef !important;
     color: #fff !important;
     font-weight: 600 !important;
 }
 
+/* Coloring add to cart button in Cart Page with important mark */
 button.single_add_to_cart_button.button.alt {
     background-color: #b6b6b6 !important;
     color: #000 !important;
 }
 
 /* Account Page Styling */
+
+/* Coloring orders-arrow button */
+div.wp-block-button.aligncenter.has-custom-width.wp-block-button__width-100.orders-arrow.is-style-outline a {
+    color: #000;
+}
+
+/* Coloring save-arrow button */
+div.wp-block-button.has-custom-width.wp-block-button__width-100.save-arrow.is-style-outline a {
+    color: #000;
+}
+
+/* Coloring general-arrow button */
+div.wp-block-button.has-custom-width.wp-block-button__width-100.general-arrow.is-style-outline a {
+    color: #000;
+}
+
+/* Coloring login-arrow button */
+div.wp-block-button.has-custom-width.wp-block-button__width-100.login-arrow.is-style-outline a {
+    color: #000;
+}
+
+/* Coloring address-arrow button */
+div.wp-block-button.has-custom-width.wp-block-button__width-100.address-arrow.is-style-outline a {
+    color: #000;
+}
+
+/* Coloring default-arrow button */
+div.wp-block-button.has-custom-width.wp-block-button__width-100.default-arrow.is-style-outline a {
+    color: #000;
+}
+
+/* Coloring profile-arrow button */
+div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is-style-outline a {
+    color: #000;
+}
+
+/* Styling / Hovering orders-arrow button */
 div.wp-block-button.aligncenter.has-custom-width.wp-block-button__width-100.orders-arrow.is-style-outline a:hover {
     background-color: #00aeef;
     border-radius: 2.0rem;
@@ -610,6 +541,7 @@ div.wp-block-button.aligncenter.has-custom-width.wp-block-button__width-100.orde
     color: #fff;
 }
 
+/* Styling / Hovering save-arrow button */
 div.wp-block-button.has-custom-width.wp-block-button__width-100.save-arrow.is-style-outline a:hover {
     background-color: #00aeef;
     border-radius: 2.0rem;
@@ -617,6 +549,7 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.save-arrow.is-st
     color: #fff;
 }
 
+/* Styling / Hovering general-arrow button */
 div.wp-block-button.has-custom-width.wp-block-button__width-100.general-arrow.is-style-outline a:hover {
     background-color: #00aeef;
     border-radius: 2.0rem;
@@ -624,6 +557,7 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.general-arrow.is
     color: #fff;
 }
 
+/* Styling / Hovering login-arrow button */
 div.wp-block-button.has-custom-width.wp-block-button__width-100.login-arrow.is-style-outline a:hover {
     background-color: #00aeef;
     border-radius: 2.0rem;
@@ -631,6 +565,7 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.login-arrow.is-s
     color: #fff;
 }
 
+/* Styling / Hovering address-arrow button */
 div.wp-block-button.has-custom-width.wp-block-button__width-100.address-arrow.is-style-outline a:hover {    
     background-color: #00aeef;
     border-radius: 2.0rem;
@@ -638,6 +573,7 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.address-arrow.is
     color: #fff;
 }
 
+/* Styling / Hovering default-arrow button */
 div.wp-block-button.has-custom-width.wp-block-button__width-100.default-arrow.is-style-outline a:hover {    
     background-color: #00aeef;
     border-radius: 2.0rem;
@@ -645,6 +581,7 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.default-arrow.is
     color: #fff;
 }
 
+/* Styling / Hovering profile-arrow button */
 div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is-style-outline a:hover {    
     background-color: #00aeef;
     border-radius: 2.0rem;
@@ -653,17 +590,16 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is
 
 }
 
-
-.sub-menu li {
-    display: none;
-}
-
-.menu li:hover {
-    display: block !important;
+/* Coloring both titles*/
+h3.title_orders, h3.title_account {
+    color: #000;
+    margin-bottom: 1.0rem;
 }
 
 
 /* My Account & Login Button Styling */
+
+/* Styling both account as well as login buttons*/
 .account a, .login a {
     color: #000;
     background-color: #00aeef;
@@ -674,57 +610,69 @@ div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is
     max-height: 40px;
 }
 
+/* Extra styling for login button*/
 .login a {
     margin-left: 80.0rem;
     margin-top: -12.0rem;
 }
 
+/* Styling and hovering both account and login links */ 
 .account a:hover, .login a:hover {
     color: #fff;
     background-color: #cccccc;
     border: solid #000 0px;
 }
 
+/* Styling and hovering both account and login buttons */
 .account:hover, .login:hover {
     text-decoration: none;
     color: #fff !important;
 }
 
 /* Blog Page Styling */
+
 div.entry-meta, footer.entry-footer {
     display: none;
 }
 
+/* Styling header title*/
 header.entry-header h2.entry-title  {
     height: 6.0rem;
     background-color: #b6b6b6;
 }
 
+/* Styling header entry hyperlink */
 h2.entry-title a {
     font-size: 2.5rem;
     color: #000;
     margin-bottom: 1.0rem;
 }
 
+/* Hovering hyperlink in the header */
 h2.entry-title a:hover {
     color: #00aeef;
 }
 
 /* Custom Post type Styling */
+
+/* Styling title h3 tag */
 .title h3 {
     margin-top: 1.0rem;
     font-size: 1.8rem;
     text-align: center;
 }
 
+/* Styling title hyperlink */
 .title a {
     color: #fff;
 }
 
+/* Hovering a hyperlink tag of title */
 .title a:hover {
     color: #0000ff;
 }
 
+/* Styling p means paragraph tag */
 .title p {
     color: #cccccc;
     margin-top: 1.0rem;
@@ -732,6 +680,7 @@ h2.entry-title a:hover {
     text-align: justify;
 }
 
+/* Styling img means image tag */
 .title img {
     margin-left: 5.2rem;
     margin-top: 1.0rem;
@@ -742,6 +691,7 @@ h2.entry-title a:hover {
     text-align: justify;
 }
 
+/* Styling single and archive custom post text*/ 
 #primary {
     background-color: red;
     color: #fff;
@@ -749,10 +699,12 @@ h2.entry-title a:hover {
     text-align: center;
 }
 
+/* Coloring all custom post title */
 .heading strong {
     color: #000;
 }
 
+/* Giving margin to all custom post post-thumbnail images- */
 .post-thumbnail img {
     margin-top: 2.0rem;
 }
@@ -760,6 +712,14 @@ h2.entry-title a:hover {
 /* Override Mobile */
 @media print,
 screen and (max-device-width: 375px) {
+
+    .entry-content > * {
+        width: auto;
+    }
+
+    .lists {
+        display: block;
+        }
 
     .site-branding a img {
         width: 25%;
@@ -881,3 +841,12 @@ screen and (max-device-width: 375px) {
     }
 
 }
+
+/* Override Tablet
+@media print,
+screen and (max-device-width: 820px) {
+
+    .entry-content > * {
+        width: auto;
+    }
+} */
