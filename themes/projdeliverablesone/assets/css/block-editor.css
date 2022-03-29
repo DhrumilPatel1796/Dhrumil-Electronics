@@ -320,13 +320,43 @@ form.woocommerce-cart-form th {
 }
 
 /* Adding border on cart totals sections on cart page */
-table.shop_table.shop_table_responsive th {
+table.shop_table.shop_table_responsive td,  th {
     border: 0.1rem solid #000;
+}
+
+/* Adding some styling to the table content on cart page */
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents td {
+    border: 0.1rem solid #000;
+    background-color: #cccccc;
+    color: #00aeef;
+    font-weight: bold;
+}
+
+/* Change background color of the delete button on cart page */
+td.product-remove a {
+    background-color: #cccccc;
+}
+
+/* Adding color and font weight to the quantity and add coupon button on cart page */
+div.quantity input,  div.coupon button.button {
+    color: #00aeef;
+    font-weight: bold;
+}
+
+/* Hovering color to the add coupon button on cart page */
+div.coupon button.button:hover {
+    color: #ff0000;
+}
+
+/* Adding color and background color to the product name on the cart page */
+td.product-name a {
+    color: #00aeef;
+    background-color: #cccccc;
 }
 
 /* Hovering and changing a hyperlink color on product name on cart page */
 form.woocommerce-cart-form a:hover {
-    color: #0000ff;
+    color: #ff0000;
 }
 
 /* Styling coupon code  input text button on cart page */
@@ -610,6 +640,11 @@ h3.title_orders, h3.title_account {
     max-height: 40px;
 }
 
+/* Styling copyright text in footer */
+.copyright {
+    color: #fff;
+}
+
 /* Extra styling for login button*/
 .login a {
     margin-left: 80.0rem;
@@ -709,58 +744,497 @@ h2.entry-title a:hover {
     margin-top: 2.0rem;
 }
 
-/* Override Mobile */
+/* Override Ipad Pro  */
 @media print,
-screen and (max-device-width: 375px) {
+screen and (max-device-width: 1024px) {
 
+    /* setting whole website width to auto */
     .entry-content > * {
         width: auto;
     }
 
-    .lists {
-        display: block;
-        }
-
+    /* reducing the custom logo width */
     .site-branding a img {
         width: 25%;
     }
 
+    /* styling search bar */
     p.site-search {
         width: 100%;
-        margin-top: 2.0rem;
-        margin-left: -12.0rem;
+        margin-left: 2.0rem;
     }
 
+    /* styling both avvount and login buttons */
     .account a, .login a {
         color: #000;
         background-color: #00aeef;
         border-radius: 1.0rem;
-        margin-left: 3.0rem;
+        margin-left: 35.5rem;
         margin-top: -15.0rem;
         font-size: 1.0rem;
         border: solid #000 0px;
         max-height: 40px;
     }
 
+    /* adding some extra styling for login button */
     .login a {
         margin-top: -15.5rem;
-        margin-left: 17.0rem;
+        margin-left: 50.0rem;
     }
 
+    /* changing the font size of primary-menu  a hyperlink tag */
     ul#primary-menu.menu li a{
         font-size: 1.0rem;
     }
 
+    /* Home Page Styling */
+
+    /* Reducing image width of gallery images on home page */
+    figure.wp-block-gallery.has-nested-images.columns-4 {
+        width: 95%;
+        margin: 1.0rem;
+    }
+
+    /* Custom posts styling */
+
+    /* Reducing the img width of custom posts */
+    .title img {
+        width: 50%;
+        margin-left: 3.0rem;
+    }
+
+    /* About Page Styling */
+    
+    /* Justifying content in our products and our services sections on about page */
+    p.products, p.services {
+        width: 90%;
+        font-size: 20px !important;
+        text-align: justify;
+    }
+
+    /* Product Page Styling */
+
+    /* Reducing width to 90% for the whole content on this page on product page */
+    ul.wc-block-grid__products {
+        width: 95%;
+        margin-left: 1.0rem;
+    }
+
+    /* Single Product Page Styling */
+    section.related.products ul.products.columns-4 {
+        margin-bottom: 0.0rem;
+    }
+
+    /* Cart Page Styling */
+    form.woocommerce-cart-form {
+        width: 90%;
+        margin-left: 0.8rem;
+    }
+
+    /* styling cart totals title section on cart page */
+    div.cart_totals h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* styling table td content on cart page  */
+    table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents td {
+        color: #000;
+    }
+
+    /* styling td price content on cart page */
+    td.product-price span.woocommerce-Price-amount.amount bdi, td.product-subtotal span.woocommerce-Price-amount.amount bdi {
+        color: #00aeef;
+    }
+
+    /* Contact Page Styling */
+    
+    /* Reducing the width to 90% for the whole conatct page */
+    form#ws-form-1.wsf-form.wsf-form-canvas {
+        width: 90%;
+    }
+}
+
+/* Override Ipad  */
+@media print,
+screen and (max-device-width: 820px) {
+
+    /* setting whole website width to auto */
+    .entry-content > * {
+        width: auto;
+    }
+
+    /* redcuing the custom logo image width */
+    .site-branding a img {
+        width: 25%;
+    }
+
+    /* styling search bar */
+    p.site-search {
+        width: 100%;
+        margin-top: 2.0rem;
+        margin-left: -12.0rem;
+    }
+
+    /* styling for account and login buttons */
+    .account a, .login a {
+        color: #000;
+        background-color: #00aeef;
+        border-radius: 1.0rem;
+        margin-left: 20.5rem;
+        margin-top: -15.0rem;
+        font-size: 1.0rem;
+        border: solid #000 0px;
+        max-height: 40px;
+    }
+
+    /* extra styling for login button */
+    .login a {
+        margin-top: -15.5rem;
+        margin-left: 35.0rem;
+    }
+
+    /* styling a hyperlink tag */
+    ul#primary-menu.menu li a{
+        font-size: 1.0rem;
+    }
+
+    /* Home Page Styling */
+
+    /* Reducing image width of gallery images on home page */
+    figure.wp-block-gallery.has-nested-images.columns-4 {
+        width: 95%;
+        margin: 1.0rem;
+    }
+
+    /* Custom posts styling */
+
+    /* Reducing the img width of custom posts */
+    .title img {
+        width: 50%;
+        margin-left: 3.0rem;
+    }
+
+    /* About Page Styling */
+    
+    /* Justifying content in our products and our services sections on about page */
+    p.products, p.services {
+        width: 90%;
+        font-size: 20px !important;
+        text-align: justify;
+    }
+
+    /* Product Page Styling */
+
+    /* Reducing width to 90% for the whole content on this page on product page */
+    ul.wc-block-grid__products {
+        width: 95%;
+        margin-left: 1.0rem;
+    }
+
+    /* Single Product Page Styling */
+    section.related.products ul.products.columns-4 {
+        margin-bottom: 0.0rem;
+    }
+
+    /* Cart Page Styling */
+    form.woocommerce-cart-form {
+        width: 90%;
+        margin-left: 0.8rem;
+    }
+
+    /* styling cart totals title section on cart page */
+    div.cart_totals h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* styling table td content on cart page */
+    table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents td {
+        color: #000;
+    }
+
+    /* styling td price content on cart page */
+    td.product-price span.woocommerce-Price-amount.amount bdi, td.product-subtotal span.woocommerce-Price-amount.amount bdi {
+        color: #00aeef;
+    }
+
+    /* Contact Page Styling */
+    
+    /* Reducing the width to 90% for the whole conatct page */
+    form#ws-form-1.wsf-form.wsf-form-canvas {
+        width: 90%;
+    }
+}
+
+/* Override Ipad  */
+@media print,
+screen and (max-device-width: 768px) {
+
+    /* setting the whole website width to auto */
+    .entry-content > * {
+        width: auto;
+    }
+
+    /* reducing the width of custom logo image */
+    .site-branding a img {
+        width: 25%;
+    }
+
+    /* styling for a search bar */
+    p.site-search {
+        width: 100%;
+        margin-top: 2.0rem;
+        margin-left: -12.0rem;
+    }
+
+    /* styling for account and login buttons */
+    .account a, .login a {
+        color: #000;
+        background-color: #00aeef;
+        border-radius: 1.0rem;
+        margin-left: 20.5rem;
+        margin-top: -15.0rem;
+        font-size: 1.0rem;
+        border: solid #000 0px;
+        max-height: 40px;
+    }
+
+    /* extra styling to login button */
+    .login a {
+        margin-top: -15.5rem;
+        margin-left: 35.0rem;
+    }
+
+    /* styling primary menu a hyperlink tag */
+    ul#primary-menu.menu li a{
+        font-size: 1.0rem;
+    }
+
+    /* Home Page Styling */
+
+    /* Reducing image width of gallery images on home page */
+    figure.wp-block-gallery.has-nested-images.columns-4 {
+        width: 95%;
+        margin: 1.0rem;
+    }
+
+    /* Custom posts styling */
+
+    /* Reducing the img width of custom posts */
+    .title img {
+        width: 50%;
+        margin-left: 3.0rem;
+    }
+
+    /* About Page Styling */
+    
+    /* Justifying content in our products and our services sections on about page */
+    p.products, p.services {
+        width: 90%;
+        font-size: 20px !important;
+        text-align: justify;
+    }
+
+    /* Product Page Styling */
+
+    /* Reducing width to 90% for the whole content on this page on product page */
+    ul.wc-block-grid__products {
+        width: 95%;
+        margin-left: 1.0rem;
+    }
+
+    /* Cart Page Styling */
+    form.woocommerce-cart-form {
+        width: 90%;
+        margin-left: 0.8rem;
+    }
+
+    /* Styling cart totals title section on cart page */
+    div.cart_totals h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* styling table td content on cart page */
+    table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents td {
+        color: #000;
+    }
+
+    /* styling the td price content on cart page */
+    td.product-price span.woocommerce-Price-amount.amount bdi, td.product-subtotal span.woocommerce-Price-amount.amount bdi {
+        color: #00aeef;
+    }
+
+    /* Contact Page Styling */
+    
+    /* Reducing the width to 90% for the whole conatct page */
+    form#ws-form-1.wsf-form.wsf-form-canvas {
+        width: 90%;
+    }
+}
+
+/* Override Iphone XR */
+@media print,
+screen and (max-device-width: 441px) {
+
+    /* Setting width to auto for the whole website content */
+    .entry-content > * {
+        width: auto;
+    }
+
+    /* reducing the custom logo img width */
+    .site-branding a img {
+        width: 25%;
+    }
+
+    /* Styling search bar */
+    p.site-search {
+        width: 100%;
+        margin-top: 2.0rem;
+        margin-left: -12.0rem;
+    }
+
+    /* Styling both account and login butoons */
+    .account a, .login a {
+        color: #000;
+        background-color: #00aeef;
+        border-radius: 1.0rem;
+        margin-left: 4.5rem;
+        margin-top: -15.0rem;
+        font-size: 1.0rem;
+        border: solid #000 0px;
+        max-height: 40px;
+    }
+
+    /* extra styling for login button */
+    .login a {
+        margin-top: -15.5rem;
+        margin-left: 20.0rem;
+    }
+
+    /* Styling primary menu a hyperlink tag */
+    ul#primary-menu.menu li a{
+        font-size: 1.0rem;
+    }
+
+    /* Styling primary menu content */
+    ul#primary-menu.menu {
+        height: 4.0rem;
+    }
+
+    /* Home Page Styling */
+
+    /* Reducing image width of gallery images on home page */
+    figure.wp-block-gallery.has-nested-images.columns-4 {
+        width: 90%;
+        margin: 1.0rem;
+    }
+
+    /* About Page Styling */
+    
+    /* Justifying content in our products and our services sections on about page */
+    p.products, p.services {
+        width: 90%;
+        font-size: 20px !important;
+        text-align: justify;
+    }
+
+    /* Product Page Styling */
+
+    /* Reducing width to 90% for the whole content on this page on product page */
+    ul.wc-block-grid__products {
+        width: 90%;
+        margin-left: 1.0rem;
+    }
+
+    /* Cart Page Styling */
+    form.woocommerce-cart-form {
+        width: 90%;
+        margin-left: 0.8rem;
+    }
+
+    /* Styling cart totals tilte in cart page */
+    div.cart_totals h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* Styling table td content on cart page */
+    table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents td {
+        color: #000;
+    }
+
+    /* Styling td price content on cart page */
+    td.product-price span.woocommerce-Price-amount.amount bdi, td.product-subtotal span.woocommerce-Price-amount.amount bdi {
+        color: #00aeef;
+    }
+
+    /* Contact Page Styling */
+    
+    /* Reducing the width to 90% for the whole conatct page */
+    form#ws-form-1.wsf-form.wsf-form-canvas {
+        width: 90%;
+    }
+}
+
+/* Override Mobile */
+@media print,
+screen and (max-device-width: 375px) {
+
+    /* setting entier wibsite width to auto */
+    .entry-content > * {
+        width: auto;
+    }
+
+    /* reducing custom logo width */
+    .site-branding a img {
+        width: 25%;
+    }
+
+    /* reducing width and styling to search */
+    p.site-search {
+        width: 100%;
+        margin-top: 2.0rem;
+        margin-left: -12.0rem;
+    }
+
+    /* Styling both account and login buttons */
+    .account a, .login a {
+        color: #000;
+        background-color: #00aeef;
+        border-radius: 1.0rem;
+        margin-left: 2.0rem;
+        margin-top: -15.0rem;
+        font-size: 1.0rem;
+        border: solid #000 0px;
+        max-height: 40px;
+    }
+
+    /* Extra styling for login button */
+    .login a {
+        margin-top: -15.5rem;
+        margin-left: 15.0rem;
+    }
+
+    /* Styling for primary menu a hyperlink tag */
+    ul#primary-menu.menu li a{
+        font-size: 1.0rem;
+    }
+
+    /* Styling for primary menu */
     ul#primary-menu.menu {
         height: 5.0rem;
     }
 
     /* My Account Page Styling */
+
+    /* Styling for titles on My Account Page */
     h3.title_orders, h3.title_account {
         color: #000;
-        margin-left: -19.5rem;
     }
 
+    /* Styling all a hyperlink tags on my account page */
     div.wp-block-button.aligncenter.has-custom-width.wp-block-button__width-100.orders-arrow.is-style-outline a,
     div.wp-block-button.has-custom-width.wp-block-button__width-100.save-arrow.is-style-outline a,
     div.wp-block-button.has-custom-width.wp-block-button__width-100.general-arrow.is-style-outline a,
@@ -768,28 +1242,21 @@ screen and (max-device-width: 375px) {
     div.wp-block-button.has-custom-width.wp-block-button__width-100.address-arrow.is-style-outline a, 
     div.wp-block-button.has-custom-width.wp-block-button__width-100.default-arrow.is-style-outline a, 
     div.wp-block-button.has-custom-width.wp-block-button__width-100.profile-arrow.is-style-outline a{
-        width: 35%;
+        width: 80%;
         font-size: 1.2rem;
-        margin-left: -39.0rem;
     }
 
     /* Home Page Styling */
-    img.wp-image-493, img.wp-image-496 {
-        width: 35%;
-        margin-left: -39.0rem;
-    }
 
+    /* Reducing image width of gallery images on home page */
     figure.wp-block-gallery.has-nested-images.columns-4 {
         width: 90%;
         margin: 1.0rem;
     }
 
     /* About Page Styling */
-    h2#our-products.product_title, h2#our-services.services_title {
-        margin-left: -20.0rem;
-        color: #000;
-    }
-
+    
+    /* Justifying content in our products and our services sections on about page */
     p.products, p.services {
         width: 90%;
         font-size: 20px !important;
@@ -797,56 +1264,110 @@ screen and (max-device-width: 375px) {
     }
 
     /* Blog Page Styling */
+
+    /* reducing width size to 90% of both posts cellphones as well as technology on blog page */
     p.cell-first-para, p.cell-second-para, p.tech-first-para, p.tech-second-para {
         width: 90%;
     }
 
-    h2.cell-reference, h2.tech-reference {
-        margin-left: -20.0rem;
-        color: #000;
-    }
-
+    /* reducing width size to 90% of reference links for both posts on blog page */
     p.cell-link, p.tech-link {
         width: 90%;
     }
 
     /* Shop Page Styling */
-    ul.products.columns-4 {
-        width: 40%;
-        margin-left: 1.0rem !important;
+
+    /* Giving some margin to the default sorting button on shop page */
+    select.orderby {
+        margin-top: -1.0rem;
     }
 
-    p.woocommerce-result-count {
-        padding-left: 1.0rem;
+    /* Styling to the product name on shop page */
+    h2.woocommerce-loop-product__title {
+        font-size: 1.0rem !important;
+        text-align: justify !important;
+        margin-left: 0.5rem !important;
     }
+
+    /* Justifying prices of the each product on shop page */
+    span.woocommerce-Price-amount.amount bdi {
+        text-align: justify !important;
+        font-size: 0.9rem;
+    }
+
+    /* Reducing font size of the add to cart button on shop page */
+    a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+
+    /* Reducing font size of sale button on shop page */
+    span.onsale {
+        font-size: 0.7rem !important;
+    }
+
+    /* Reducing width of the whole content on shop page */ 
+    div.woocommerce.columns-4 {
+        width: 95%;
+        margin: 1.0rem;
+        margin-bottom: -1.5rem;
+    } 
 
     /* Product Page Styling */
+
+    /* Reducing width to 90% for the whole content on this page on product page */
     ul.wc-block-grid__products {
-        width: 50%;
-        margin-left: -5.0rem;
+        width: 90%;
+        margin-left: 1.0rem;
     }
 
     /* Cart Page Styling */
     form.woocommerce-cart-form {
-        width: 35%;
+        width: 90%;
         margin-left: 0.8rem;
     }
 
+    /* Styling cart totals title section on cart page */
     div.cart_totals h2 {
-        width: 35%;
+        text-align: center;
+        font-size: 1.5rem;
     }
 
-    table tbody .cart-subtotal, table tbody .order-total {
-        width: 20%;
+    /* Styling table td content on cart page */
+    table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents td {
+        color: #000;
+    }
+
+    /* Styling price on cart page */
+    td.product-price span.woocommerce-Price-amount.amount bdi, td.product-subtotal span.woocommerce-Price-amount.amount bdi {
+        color: #00aeef;
+    }
+
+    /* Contact Page Styling */
+    
+    /* Reducing the width to 90% for the whole conatct page */
+    form#ws-form-1.wsf-form.wsf-form-canvas {
+        width: 90%;
+    }
+
+    /* Footer Page Styling */
+
+    /* Styling on lists on footer */
+    .lists {
+        display: block;
+        text-align: center;
+    }
+
+    /* Styling ul li sections in footer */
+    .lists section#block-28.widget.widget_block ul li, .lists section#block-27.widget.widget_block ul li {
+        text-align: justify;
+        list-style-position: inside;
+        margin-left: 6.5rem;
+    }
+    
+    /* Styling ul li sections in footer */
+    .lists section#block-27.widget.widget_block ul li {
+        margin-left: 7.0rem;
     }
 
 }
-
-/* Override Tablet
-@media print,
-screen and (max-device-width: 820px) {
-
-    .entry-content > * {
-        width: auto;
-    }
-} */
